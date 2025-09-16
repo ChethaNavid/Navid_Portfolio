@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { Home, User, Award, Folder, LayoutDashboard, Mail } from "lucide-react"
 import Link from "next/link";
 
 import {
@@ -23,27 +23,27 @@ const items = [
   {
     title: "About",
     url: "/about",
-    icon: Inbox,
+    icon: User,
   },
   {
     title: "Archievement",
     url: "/archievement",
-    icon: Calendar,
+    icon: Award,
   },
   {
     title: "Projects",
     url: "/projects",
-    icon: Search,
+    icon: Folder,
   },
   {
     title: "Dashboard",
     url: "/dashboard",
-    icon: Settings,
+    icon: LayoutDashboard,
   },
   {
     title: "Contact",
     url: "/contact",
-    icon: Settings,
+    icon: Mail,
   },
 ]
 
