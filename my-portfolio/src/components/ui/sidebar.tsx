@@ -26,6 +26,7 @@ import {
 } from "@/components/ui/tooltip"
 import Image from "next/image"
 import profilePicture from "@/assets/images/my-picture.jpg"
+import { CheckBadgeIcon } from "@heroicons/react/24/solid"
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
@@ -230,7 +231,12 @@ const SideBarProfile = () => {
           priority
         />
       </div>
-      <p className="font-medium text-xl">Chetha Navid</p>
+
+      <div className="flex items-center gap-1">
+        <p className="font-medium text-xl">Chetha Navid</p>
+        <CheckBadgeIcon className="text-blue-500 w-5 h-5" />
+      </div>
+
       <p className="text-neutral-600 text-xs">@chethanavid</p>
     </div>
   )
