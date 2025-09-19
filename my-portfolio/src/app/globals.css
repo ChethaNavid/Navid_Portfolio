@@ -121,3 +121,66 @@
     @apply bg-background text-foreground;
   }
 }
+
+:root {
+  --text: #111111; /* headings light */
+  --text-secondary: #333333; /* paragraph light */
+  --bg: #ffffff;
+}
+
+.dark {
+  --text-dark: #eeeeee;
+  --text-secondary-dark: #cccccc;
+  --bg-dark: #111111;
+}
+
+.markdown-body {
+  line-height: 1.6;
+  color: var(--text-secondary); /* light mode text */
+  background: var(--bg);
+}
+
+.dark .markdown-body {
+  color: var(--text-secondary-dark); /* dark mode text */
+  background: var(--bg-dark);
+}
+
+/* Optional for headings */
+.markdown-body h1, 
+.markdown-body h2, 
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  color: var(--text);
+}
+
+.dark .markdown-body h1, 
+.dark .markdown-body h2, 
+.dark .markdown-body h3,
+.dark .markdown-body h4,
+.dark .markdown-body h5,
+.dark .markdown-body h6 {
+  color: var(--text-dark);
+}
+
+.dark pre, 
+.dark code {
+  background: var(--code-bg-dark, #1e1e1e);   /* dark background */
+  color: var(--code-text-dark, #f8f8f2);      /* light text */
+}
+
+.dark table {
+  background: var(--bg-dark, #111111);
+  color: var(--text-dark, #eeeeee);
+}
+
+.dark th, .dark td {
+  background: var(--table-header-bg-dark, #2a2a2a);
+  color: var(--text-dark, #eeeeee);
+}
+
+.dark td {
+  border-color: #444; /* optional: slightly lighter border for contrast */
+}
+
