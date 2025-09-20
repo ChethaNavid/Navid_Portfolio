@@ -237,7 +237,7 @@ const SideBarProfile = () => {
         <CheckBadgeIcon className="text-blue-500 w-5 h-5" />
       </div>
 
-      <p className="text-neutral-600 text-xs">@chethanavid</p>
+      <p className="text-neutral-600 text-xs dark:text-neutral-400">@chethanavid</p>
     </div>
   )
 }
